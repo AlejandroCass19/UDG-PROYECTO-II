@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Huatulco Mio</title>
+  <style>
+    .tour {
+      border: 1px solid gray;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .tour h2 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .tour p {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .tour button {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tours en Huatulco </h1>
+  <div class="tour">
+    <h2>1. Tours a las playas</h2>
+    <p>Conoce las las principales playas de Huatulco y uno de los arrecifes de coral más grandes de Mexico.</p>
+    <button>Comprar</button>
+  </div>
+  <div class="tour">
+    <h2> 2. Tour a las Cascadas</h2>
+    <p>Conoce las cascascadas de San Miguel del Puerto sus albercas naturales y disfrute de un platillo tradicional de la zona .</p>
+    <button>Comprar</button>
+  </div>
+  <div class="tour">
+    <h2>3. ECO-TOUR</h2>
+    <p>Conoce la reserva ecologica la ventanilla y admira el atardecer en playa Zicatela, Puerto Escondido.</p>
+    <button>Comprar</button>
+  </div>
+  <script>
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        alert("La compra se ha realizado con éxito");
+      });
+    });
+  </script>
+</body>
+
+</html>
